@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/highcharts.src.js"></script>
+<h2>Index</h2>
+
+<div id="container" style="width: 500px; height: 500px">
+</div>
+
+@*<input id="Ok" type="button" value="Come on 给我生成吧" />
+
+<script>
+    $("#Ok").click(function () {
+        $.ajax({
+            type: "post",
+            url: "/Word/SetWord",
+            data: {},
+            success: function (data) {
+                if (data.type == "Success") {
+                    alert(data.message);
+                }
+            }
+        });
+    });
+
+</script>*@
+<script>
+    $(function () {
+        var chartpt = new Highcharts.Chart({
+            chart: {
+                renderTo: "container",
+                type: 'pie'
+            },
+            colors: [
+            "#7da453", '#b3de82', "#efc265", "#e97b5a"],
+            plotOptions: {
+                pie: {
+                    innerSize: '60%',
+                    allowPointSelect: true,
+                    slicedOffset: 15
+                },
+                series: {
+                    point: {
+                        events: {
+                            select:function () {
+                                chartpt.series[0].data[this.x].percentage = 40;
+                            }
+                        }
+                    }
+                        
+                }
+            },
+
+            series: [{
+                data: [
+                    ['IE7', 26.6],
+                    ['IE6', 20],
+                    ['Chrome', 3.1],
+                    ['Other', 5.4]
+                ]
+            }]
+        });
+    });
+</script>

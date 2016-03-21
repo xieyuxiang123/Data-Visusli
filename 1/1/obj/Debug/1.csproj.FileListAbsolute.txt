@@ -1,0 +1,13 @@
+H:\33\1\1\bin\Debug\1.exe.config
+H:\33\1\1\bin\Debug\1.exe
+H:\33\1\1\bin\Debug\1.pdb
+H:\33\1\1\bin\Debug\Aspose.Words.dll
+H:\33\1\1\bin\Debug\RabbitMQ.Client.dll
+H:\33\1\1\obj\Debug\1.csprojResolveAssemblyReference.cache
+H:\33\1\1\obj\Debug\1.exe
+H:\33\1\1\obj\Debug\1.pdb
+H:\33\1\1\bin\Debug\RuanYun.Word.dll
+H:\33\1\1\bin\Debug\Aspose.Cells.dll
+D:\33\1\1\bin\Debug\1.exe.config
+D:\33\1\1\obj\Debug\1.exe
+D:\33\1\1\obj\Debug\1.pdb
